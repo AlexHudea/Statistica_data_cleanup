@@ -13,7 +13,7 @@ df["year"] = pd.to_numeric(df["year"], errors="coerce")
 # Set global visual style
 sns.set_theme(style="whitegrid")
 
-# --- Plot 1: Top 10 Car Makes ---
+# --- Plot 1: Top 20 Car Makes ---
 plt.figure(figsize=(10, 6))
 top_brands = df["brand"].value_counts().head(20).index
 sns.countplot(
